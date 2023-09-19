@@ -2,6 +2,7 @@
 
 import { Button, Input } from "@nextui-org/react";
 import { useState } from "react";
+import Cookies from "js-cookie";
 
 export const Login = () => {
   const initialLoginData = {
@@ -23,6 +24,7 @@ export const Login = () => {
       body: JSON.stringify({ email, password }),
     });
     const data = await res.json();
+    Cookies.set("token", data.token);
     console.log(data);
   };
 
