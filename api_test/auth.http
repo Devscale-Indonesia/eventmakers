@@ -1,0 +1,17 @@
+### Create User
+POST https://eventmakers-api.vercel.app/api/auth/register
+
+{
+    "name": "Indra Zulfi",
+    "email": "hello@indrazm.com",
+    "password": "12345678"
+}
+
+### Login User
+
+POST https://eventmakers-api.vercel.app/api/auth/login
+
+{
+    "email": "hello@indrazm.com",
+    "password": "12345678"
+}
